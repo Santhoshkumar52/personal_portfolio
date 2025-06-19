@@ -73,14 +73,14 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100">
+    <div className="min-h-screen  from-green-50 via-white to-green-100">
       {/* Background Pattern */}
       <div className="fixed inset-0 opacity-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(34,197,94,0.3)_1px,transparent_0)] bg-[length:40px_40px]"></div>
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/20">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/20 backdrop-blur-sm border-b border-white/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
@@ -154,9 +154,7 @@ function App() {
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="bg-white/30 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/20 shadow-xl">
-            <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-2xl">
-              <User size={64} className="text-white" />
-            </div>
+              <img srcSet="VSK.jpg" className='size-32 object-cover mx-auto mb-8 rounded-full flex items-end justify-center shadow-2xl' alt="VSK profile img"/>
             <h1 className="text-4xl md:text-6xl font-bold text-green-800 mb-4">
               V.Santhosh Kumar
             </h1>
