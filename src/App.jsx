@@ -50,19 +50,19 @@ function App() {
       title: 'Shoppe- Shopping Site',
       description: 'Responsive Frontend Project',
       tech: ['React', 'Html', 'Tailwind','Javascript'],
-      link: '#'
+      link: 'https://shoppe-hc8o.onrender.com'
     },
     {
       title: 'Mc Book Store',
       description: 'List of Books with CRUD operations',
       tech: ['JavaScript', 'Express', 'MongoDb','Node.js','Tailwindcss'],
-      link: ''
+      link: 'https://frontend-bookstore-c2qq.onrender.com'
     },
     {
       title: 'Weather Dashboard',
       description: 'weather application with data visualization',
       tech: ['React', 'Api',],
-      link: '#'
+      link: 'https://weather-dashboard-rpmg.onrender.com'
     },
     {
       title: 'Mc Bakers',
@@ -179,7 +179,7 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-8 text-center">
               About Me
             </h2>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <p className="text-lg text-green-700 mb-6 leading-relaxed">
                 I’m a self-driven MERN Stack Developer with a strong foundation in React.js, Node.js, JavaScript, and MongoDB.
@@ -214,6 +214,7 @@ function App() {
                   >
                     <div className="flex justify-between items-start mb-3">
                       <h4 className="text-lg font-semibold text-green-800">{project.title}</h4>
+                      <button className='bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105'><a href={project.link} target='new'>Live Demo</a></button>
                     </div>
                     <p className="text-green-700 mb-3">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
@@ -256,7 +257,7 @@ function App() {
                         </div>
                         <div className="w-full bg-green-100 rounded-full h-2 overflow-hidden">
                           <div
-                            className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full transition-all duration-1000 ease-out"
+                            className="h-full bg-gradient-to-l from-green-400 to-green-600 rounded-full transition-all duration-1000 ease-out"
                             style={{ width: `${skill.level}%` }}
                           ></div>
                         </div>
@@ -290,7 +291,7 @@ function App() {
               Get In Touch
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="">
               <div>
                 <h3 className="text-xl font-semibold text-green-800 mb-6">Let's Connect</h3>
                 <p className="text-green-700 mb-6 leading-relaxed">
@@ -333,57 +334,12 @@ function App() {
                       <Phone size={20} className="text-white" />
                     </div>
                     <div>
-                      <h4 className="font-medium text-green-800">+91 9884150605</h4>
+                      <h4 className="font-medium text-green-800">Mobile / WhatsApp</h4>
+                      <p className="text-green-600">+91 9884150605</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-green-800 mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                    placeholder="Your name"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-green-800 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-green-800 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Tell me about your project or just say hello!"
-                  ></textarea>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2"
-                >
-                  Send Message
-                  <Mail size={20} />
-                </button>
-              </form>
             </div>
           </div>
         </div>
