@@ -80,7 +80,7 @@ function App() {
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/20 backdrop-blur-sm border-b border-white/20">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-neutral-200 backdrop-blur-lg border-b border-white/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
@@ -125,7 +125,7 @@ function App() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/20 backdrop-blur-md border-t border-white/20">
+          <div className="md:hidden bg-neutral-200 backdrop-blur-lg border-t border-white/20">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {[
                 { id: 'about', label: 'About', icon: User },
